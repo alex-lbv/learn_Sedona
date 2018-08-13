@@ -29,36 +29,47 @@
       <!-- Здесь будет форма -->
     </section>
 
-    <!-- <div class="search">
+    <div class="search">
+<!-- Зачем закоментировал? тут все хорошо и правильно сверстано. Взял на себя смелость раскоментировать -->
       <div>
+<!-- див лишний -->
         <h3>Найдено:</h3>
+<!-- "Найдено" это не заголовок. Просто <p>. -->
+
       </div>
       <div class="search-sort">
+<!-- <div class="search-sort"> лишний -->
         <p>Сортировка:</p>
         <ul>
           <li><span class="search-sort-price">По цене</span></li>
           <li><span class="search-sort-type">По типу</span></li>
           <li><span class="search-sort-rating">По рейтингу</span></li>
+<!-- По цене, По типу, По рейтингу должны быть ссылками, а вот зачем там спан не понятно. Заменяй спаны на ссылки.
+Стрелочки вверх\вниз также ссылки и их можно вставить в этот список -->
         </ul>
       </div>
       <div class="search-type">
          <span class="button search-button search-button-up">Верх</span>
          <span class="button search-button search-button-down">Низ</span>
       </div>
-    </div> -->
+    </div>
 
     <section class="catalog">
       <h2 class="visually-hidden">Найдено</h2>
+<!-- Может лучше так? <h2 class="visually-hidden">Результаты поиска</h2> -->
       <ul class="catalog-list">
 
         <li class="catalog-item">
           <h3>
                 <a href="catalog-item.html">
+<!-- Спан лишний -->
                   <span class="catalog-item-title">AMARA RESORT & SPA</span>
                 </a>
               </h3>
           <span class="catalog-category">Гостиница</span>
           <span class="catalog-price">ОТ 4000 Р.</span>
+
+<!-- Почему изображение находится в середине разметки блока? По правилу чтения документа (слева-направо) оно должно в блоке читаться первым, значит его нужно размещать первым. Весь остальной контент необходимо обернуть в див для удобства позиционирования. -->
           <p class="catalog-item-image">
             <a href="catalog-item.html">
                   <img src="img/product-1.jpg" alt="AMARA RESORT & SPA">
@@ -68,6 +79,7 @@
             <a class="button" href="#">ПОДРОБНЕЕ</a>
             <a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
           </p>
+<!-- Не размечена правая часть (рейтинг и звездочки). Сделай див, внутри него два абзаца - один для звездочек, второй для рейтинга -->
         </li>
 
         <li class="catalog-item">
