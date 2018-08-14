@@ -8,8 +8,7 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-<!-- Логотип это действительно ссылка на главную, но страница не должна ссылаться сама на себя. Поэтому логотип это ссылка на главную на всех страницах проекта кроме главной. Чтобы ссылка перестала являться ссылкой, достаточно удалить у нее аттрибут href -->
+      <a class="main-header-logo">
           <img src="img/index-logo.png" alt="Логотип Седона">
         </a>
       <ul class="site-navigation">
@@ -33,8 +32,9 @@
     <p>Рассмотрим 5 причин, по которым Седрна круче, чем Гранд Каньон!</p>
   </section>
 
-  <section class="reason-1">
+  <section class="reason">
     <div class="description">
+      <div class="description-text">
     <h3>Настоящий городок</h3>
     <p>-№1-</p>
     <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
@@ -42,6 +42,7 @@
     <div class="description-img">
     <img src="#" alt="Городок">
     </div>
+  </div>
   </section>
 
   <div class="feature">
@@ -62,10 +63,9 @@
     </ul>
   </div>
 
-
-<!-- Блок <section class="reason-1"> и <section class="reason-2"> одинаковые с точки зрения стилизации, отличаются только контентом. Значит класс должен быть одинаковый. Поменять местами изображение и описательную часть можно с помощью дополнительного класа к любому из вышейпомянутых блоков -->
-  <section class="reason-2">
+  <section class="reason">
     <div class="description">
+    <div class="description-text">
     <h3>Там есть мост Дьявола</h3>
     <p>-№2-</p>
     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -73,10 +73,11 @@
   <div class="description-img">
     <img src="#" alt="Мост дьявола">
   </div>
+</div>
   </section>
 
-<section class="reason-3">  <ul class="reason-list">
-<!-- Не совсем корректно назван класс, ведь в нем находится не только преимущество №3. Может быть не стоит привязывать название классов к номерации? Подумай...  -->
+<section class="reason-other">
+    <ul class="reason-list">
     <li>
         <h3>Небольшая площадь</h3>
         <p>-№3-</p>
@@ -96,14 +97,12 @@
 </section>
 
 <section class="search">
-  <h2>Заинтересовались?</h2>
-<!-- <h2>Заинтересовались?</h2> На заголовок не тянет. Это скорее призыв, поэтому его можно выполнить семантическим тегом strong -->
+  <strong>Заинтересовались?</strong>
 
   <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предлодения гостиниц в Седоне</p>
   <div class="search-catalog">
-  <select class="button catalog-button">Поиск гостиницы в Седоне</select>
+  <button class="catalog-button">Поиск гостиницы в Седоне</button>
   <!-- "ПОИСК ГОСТИНИЦЫ В СЕДОНЕ" Это кнопка (тег button). Она открывает и закрывает форму -->
-
 
     <!-- Здесь будет форма -->
   </div>
@@ -111,24 +110,16 @@
   <div class="map">
     <!-- Здесь будет карта  -->
   </div>
-
   </main>
 
   <footer class="main-footer">
-  <div>
-<!-- див лишний -->
-    <p>#VISITSEDONA</p>
-  </div>
 
-  <div class="footer-social">
-<!-- Див лишний. Класс footer-social можно присвоить прямо списку и этого будет достаточно -->
-    <ul>
-      <li><a class="social-buttom" href="#">Твитер</a></li>
-        <li><a class="social-buttom" href="#">Фейсбук</a></li>
-        <li><a class="social-buttom" href="#">Ютуб</a></li>
-<!-- Для ссылок понадобится дополнительный класс, который будет отвечать за иконку на соцсетях. Должно получиться что-то типа  <a class="social-button social-button-facebook"-->
+    <p>#VISITSEDONA</p>
+    <ul class="footer-social">
+      <li><a class="social-button social-buttom-twitter" href="#">Твитер</a></li>
+        <li><a class="social-button social-buttom-facebook" href="#">Фейсбук</a></li>
+        <li><a class="social-button social-buttom-youtube" href="#">Ютуб</a></li>
       </ul>
-    </div>
 
     <div>
     <a href="https://htmlacademy.ru/intensive/htmlcss" >Логотип Html Academy</a>
