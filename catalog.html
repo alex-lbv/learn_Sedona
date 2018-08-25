@@ -26,7 +26,54 @@
 
     <section class="filter">
       <h2 class="visually-hidden">Фильтр</h2>
-      <!-- Здесь будет форма -->
+      <form class="filter-form" method="get">
+        <div>
+          <h4>Инфраструткра:</h4>
+          <ul>
+
+          <li class="filter-option">
+            <input  class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+            <label for="filter-pool">Бассейн</label>
+          </li>
+          <li class="filter-option">
+            <input  class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+            <label for="filter-parking">Парковка</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox" name="wi-fi" id="filter-wi-fi">
+            <label for="filter-wi-fi">Wi-Fi</label>
+          </li>
+        </ul>
+        </div>
+
+        <div>
+          <h4>Тип жилья:</h4>
+          <ul>
+
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked >
+            <label for="filter-hotel">Гостиница</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"  name="motel" id="filter-motel" checked>
+            <label for="filter-motel">Мотель</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"  name="apartaments" id="filter-apartaments" checked>
+            <label for="filter-apartaments">Апартаменты</label>
+          </li>
+        </ul>
+        </div>
+
+        <div>
+          <p><span>Стоимость в сутки (Р):</span></p>
+          <div>
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до <input name="max-price" type="text" value="3000"></label>
+        </div>
+          <button>Показать</button>
+        </div>
+      </form>
     </section>
 
     <div class="search">
@@ -122,13 +169,16 @@
 
     <p>#VISITSEDONA</p>
     <ul class="footer-social">
-      <li><a class="social-button social-buttom-twitter" href="#">Твитер</a></li>
+      <li><a class="social-button social-buttom-twitter" href="#">Твиттер</a></li>
         <li><a class="social-button social-buttom-facebook" href="#">Фейсбук</a></li>
         <li><a class="social-button social-buttom-youtube" href="#">Ютуб</a></li>
       </ul>
 
     <div>
-    <a href="https://htmlacademy.ru/intensive/htmlcss" >Логотип Html Academy</a>
+    <a href="https://htmlacademy.ru/intensive/htmlcss">
+    <span class="logo-htmlacademy">Website by</span>
+    <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Html Academy">
+    </a>
   </div>
 
 </footer>
