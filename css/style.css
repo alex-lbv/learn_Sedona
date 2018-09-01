@@ -39,6 +39,7 @@ a {
   background-image: url("../img/bg-index.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 .top-img {
   text-align: center;
@@ -55,6 +56,12 @@ a {
 .reasons p {
   font-size: 14px;
   line-height: 26px;
+}
+.feature-housing {
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+
+
 }
 .description-text-gorodok {
   color: #ffffff;
@@ -94,6 +101,84 @@ a {
   font-size: 14px;
   line-height: 21px;
 }
+.search strong {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+.search p:first-of-type {
+  font-size: 14px;
+  line-height: 24px;
+}
+.catalog-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: #eeeeee;
+  text-transform: uppercase;
+
+  background-color: #776458;
+}
+.search-form{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+}
+.search-form input,
+.search-form button {
+  background-color: #f2f2f2;
+  border: none;
+  text-transform: uppercase;
+}
+.date-input {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  width: 346px;
+  padding-left: 13px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.date-input:hover {
+  background-color: #ebebeb;
+}
+.date-input:active {
+  background-color: ffffff;
+  border:2px solid;
+  border-color:#e5e5e5;
+}
+.button-reduce,
+.number-input,
+.button-add {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  width: 38px;
+  /* padding: 12px 14px 12px 14px; */
+
+}
+.number-input,
+.button-add {
+  margin-left: -4px;
+}
+.search-form .button-search-form {
+  color: #eeeeee;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  /* width: 460px; */
+  padding:  17px 190px 17px 190px ;
+  background-color: #81b3d2;
+}
+.button-search-form:hover {
+  background-color: #669ec0;
+}
+.button-search-form:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
 .main-footer {
   background-color: #ffffff;
 }
@@ -103,4 +188,128 @@ a {
 }
 .footer-social {
   list-style: none;
+}
+
+.social-button-twitter {
+  padding: 7px;
+  background-color: #81b3d2 ;
+
+}
+.social-button-facebook {
+  padding: 7px;
+  background-color: #81b3d2 ;
+}
+.social-button-youtube {
+  padding: 7px;
+  background-color: #81b3d2 ;
+}
+
+
+/* catalog.html */
+.site-navigation-current a {
+  color: #766357;
+}
+.found {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.catalog-filter {
+color: #ffffff;
+background-color: #5b88b0;
+background-image: url("../img/bg-catalog.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100%;
+}
+.filter-list,
+.search-list,
+.catalog-list {
+  list-style: none;
+}
+.catalog-filter h4 {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.filter-button {
+  color: #ffffff;
+  border: 2px solid;
+  border-color: #ffffff;
+  background-color: transparent;
+}
+.filter-button:hover {
+  color:#000000;
+  background-color: #ffffff;
+}
+
+/* range */
+.range-filter {
+  width: 250px;
+}
+
+.search-catalog {
+  font-size: 12px;
+  line-height: 18px;
+}
+.catalog-item-title:hover {
+    color: #81b3d2;
+}
+.catalog-item-title:active {
+    color: #cacaca;
+}
+.catalog h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.catalog  a {
+    color: #000000;
+}
+.catalog .button {
+  color: #ffffff;
+  padding: 6px 17px 6px 17px;
+}
+
+.star{
+    width: 100px;
+}
+.four {
+  background-image: url("../img/star.svg");
+	background-repeat: space;
+  padding-left: 80px;
+}
+.three {
+  background-image: url("../img/star.svg");
+  background-repeat: space;
+  padding-left: 60px;
+}
+.two {
+  background-image: url("../img/star.svg");
+  background-repeat: space;
+  padding-left: 40px;
+}
+.rating {
+  background-color: #f2f2f2;
+  padding: 6px 17px 6px 17px;
+}
+.button-more {
+  background-color: #81b3d2;
+}
+.button-more:hover {
+  background-color: #669ec0;
+}
+.button-more:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+.button-reserve {
+  background-color: #766357;
+}
+.button-reserve:hover {
+background-color: #604e43;
+}
+.button-reserve:active {
+  color: #928a85;
+background-color: #503e33;
 }

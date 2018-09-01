@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,12 +27,12 @@
   <main class="container">
     <h1 class="visually-hidden">Гостиницы</h1>
 
-    <section class="filter">
+    <section class="catalog-filter">
       <h2 class="visually-hidden">Фильтр</h2>
       <form class="filter-form" method="get">
         <div>
           <h4>Инфраструткра:</h4>
-          <ul>
+          <ul class="filter-list">
 
           <li class="filter-option">
             <input  class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
@@ -48,7 +51,7 @@
 
         <div>
           <h4>Тип жилья:</h4>
-          <ul>
+          <ul class="filter-list">
 
           <li class="filter-option">
             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked >
@@ -65,21 +68,31 @@
         </ul>
         </div>
 
-        <div>
-          <p><span>Стоимость в сутки (Р):</span></p>
-          <div>
+        <div class="range-filter">
+          <p><span>Стоимость в сутки (р):</span></p>
+          <div class="range-control">
+            <div class="scale">
+              <div class="bar">
+              </div>
+            </div>
+            <div class="toggle toggle-min">
+            </div>
+            <div class="toggle toggle-max">
+            </div>
+          </div>
+          <div class="price-control">
             <label class="min-price">от <input name="min-price" type="text" value="0"></label>
           <label class="max-price">до <input name="max-price" type="text" value="3000"></label>
         </div>
-          <button>Показать</button>
+          <button class="filter-button">Показать</button>
         </div>
+
       </form>
     </section>
-
-    <div class="search">
-        <p><span>Найдено:</span></p>
+    <div class="search-catalog">
+        <p><span class="found">Найдено: 3</span></p>
         <p>Сортировка:</p>
-        <ul>
+        <ul class="search-list">
           <li><a class="search-sort-price" href="#">По цене</a></li>
           <li><a class="search-sort-type" href="#">По типу</a></li>
           <li><a class="search-sort-rating" href="#">По рейтингу</a></li>
@@ -105,13 +118,13 @@
             <span class="catalog-category">ГОСТИНИЦА</span>
             <span class="catalog-price">ОТ 4000 Р.</span>
             <p>
-            <a class="button" href="#">ПОДРОБНЕЕ</a>
-            <a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+            <a class="button button-more" href="#">ПОДРОБНЕЕ</a>
+            <a class="button button-reserve" href="#">ЗАБРОНИРОВАТЬ</a>
             </p>
           </div>
           <div class="catalog-rating">
-            <p>4 Звезды</p>
-            <p>Рейтинг: 8.5</p>
+            <p class="star"><span class="four"></span></p>
+            <p><span class="rating">Рейтинг: 8.5</span></p>
           </div>
         </li>
 
@@ -128,13 +141,13 @@
             <span class="catalog-category">МОТЕЛЬ</span>
             <span class="catalog-price">ОТ 3000 Р.</span>
             <p>
-            <a class="button" href="#">ПОДРОБНЕЕ</a>
-            <a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+            <a class="button button-more" href="#">ПОДРОБНЕЕ</a>
+            <a class="button button-reserve" href="#">ЗАБРОНИРОВАТЬ</a>
             </p>
           </div>
           <div class="catalog-rating">
-            <p>3 Звезды</p>
-            <p>Рейтинг: 8.9</p>
+            <p class="star"><span class="three"></span></p>
+            <p><span class="rating">Рейтинг: 8.9</span></p>
         </div>
         </li>
 
@@ -151,13 +164,13 @@
             <span class="catalog-category">АПАРТАМЕНТЫ</span>
             <span class="catalog-price">ОТ 2000 Р.</span>
             <p>
-            <a class="button" href="#">ПОДРОБНЕЕ</a>
-            <a class="button" href="#">ЗАБРОНИРОВАТЬ</a>
+            <a class="button button-more" href="#">ПОДРОБНЕЕ</a>
+            <a class="button button-reserve" href="#">ЗАБРОНИРОВАТЬ</a>
             </p>
           </div>
           <div class="catalog-rating">
-            <p>2 Звезды</p>
-            <p>Рейтинг: 9.2</p>
+              <p class="star"><span class="two"></span></p>
+              <p><span class="rating">Рейтинг: 9.2</span></p>
           </div>
         </li>
       </ul>
@@ -169,10 +182,16 @@
 
     <p>#VISITSEDONA</p>
     <ul class="footer-social">
-      <li><a class="social-button social-buttom-twitter" href="#">Твиттер</a></li>
-        <li><a class="social-button social-buttom-facebook" href="#">Фейсбук</a></li>
-        <li><a class="social-button social-buttom-youtube" href="#">Ютуб</a></li>
-      </ul>
+      <li>
+        <a class="social-button-twitter" href="#"><img src="img/twitter.svg" width="16" height="18" alt="Твиттер"></a>
+      </li>
+      <li>
+        <a class="social-button-facebook" href="#"><img src="img/fb-icon.svg" width="16" height="18" alt="Фейсбук"></a>
+      </li>
+      <li>
+        <a class="social-button-youtube" href="#"><img src="img/youtube.svg" width="16" height="18" alt="Ютуб"></a>
+      </li>
+    </ul>
 
     <div>
     <a href="https://htmlacademy.ru/intensive/htmlcss">
