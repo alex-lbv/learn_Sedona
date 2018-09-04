@@ -12,9 +12,11 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
+      <div class="main-header-logo">
+        <a class="header-logo">
           <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седона">
         </a>
+      </div>
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="foto-video-html">Фото и видео</a></li>
@@ -35,20 +37,20 @@
 
     <section class="reasons">
       <h2>Седона- небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седрна круче, чем Гранд Каньон!</p>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
 
-    <section class="reason">
-      <div class="description">
+    <section class="reason-gorodok">
+
         <div class="description-text-gorodok">
           <h3>Настоящий городок</h3>
           <p>-№1-</p>
           <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <div class="description-img">
-          <img src="img/gorodok.jpg" width="512" height="256" alt="Городок">
+        <div class="description-img-gorodok">
+          <!-- <img src="img/gorodok.jpg" width="512" height="256" alt="Городок"> -->
         </div>
-      </div>
+
     </section>
 
     <section class="feature">
@@ -69,19 +71,20 @@
       </ul>
     </section>
 
-    <section class="reason">
-      <div class="description">
+    <section class="reason-most">
+
         <div class="description-text-most">
-          <h3>Там есть мост Дьявола</h3>
+          <h3>Там есть<br> мост Дьявола</h3>
           <p>-№2-</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-        <div class="description-img">
-          <img src="img/most.jpg" width="512" height="256" alt="Мост дьявола">
+        <div class="description-img-most">
+          <!-- <img src="img/most.jpg" width="512" height="256" alt="Мост дьявола"> -->
         </div>
-      </div>
+
     </section>
 
+    <div class="container-reason-other">
     <section class="reason-other">
       <ul class="reason-list">
         <li>
@@ -92,7 +95,7 @@
         <li>
           <h3>Красивая дорога</h3>
           <p>-№4-</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li>
           <h3>Мало туристов</h3>
@@ -101,12 +104,18 @@
         </li>
       </ul>
     </section>
+  </div>
+
     <section class="search">
+      <div class="search-head">
       <strong>Заинтересовались?</strong>
 
-      <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предлодения гостиниц в Седоне</p>
+      <p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предлодения гостиниц в Седоне</p>
+
       <div class="search-catalog">
         <button class="catalog-button">Поиск гостиницы в Седоне</button>
+        </div>
+        </div>
 
         <form class="search-form" action="/echo.php" method="post">
           <p>
@@ -120,13 +129,12 @@
             <input class="date-input" type="text" name="date-check-out" id="check-out" value="4 июля 2017">
             <button class="button-date-check-out"></button>
           </p>
-          <p>
+          <p class="form-footer">
             <label for="adult-id">Взрослые</label>
             <button class="button-reduce" name="button-adult-reduce" id="button-adult-reduce" value="reduce">-</button>
             <input class="number-input" type="number" name="adult" id="adult-id" value="2">
             <button class="button-add" name="button-adult-add" id="button-adult-add" value="add">+</button>
-          </p>
-          <p>
+
             <label for="childs-id">Дети</label>
             <button class="button-reduce" name="button-childs-reduce" id="button-childs-reduce" value="reduce">-</button>
             <input class="number-input" type="number" name="childs" id="childs-id" value="0">
@@ -134,27 +142,27 @@
           </p>
           <button class="button-search-form" type="submit" value="Найти">Найти</button>
         </form>
-      </div>
+
     </section>
 
     <section class="map">
-      <img src="img/mini-map.jpg" width="1200" height="473" alt="Седона, городок находящийся в Аризоне">
+      <!-- <img src="img/map.jpg" width="1718" height="748" alt="Седона, городок находящийся в Аризоне"> -->
     </section>
   </main>
 
   <footer class="main-footer">
-
-    <p>#VISITSEDONA</p>
+    <div class="footer-container">
+    <p class="footer-kheshtyeg">#VISITSEDONA</p>
 
     <ul class="footer-social">
       <li>
-        <a class="social-button-twitter" href="#"><img src="img/twitter.svg" width="16" height="18" alt="Твиттер"></a>
+        <a class="social-button-twitter" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Твиттер"></a>
       </li>
       <li>
-        <a class="social-button-facebook" href="#"><img src="img/fb-icon.svg" width="16" height="18" alt="Фейсбук"></a>
+        <a class="social-button-facebook" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
       </li>
       <li>
-        <a class="social-button-youtube" href="#"><img src="img/youtube.svg" width="16" height="18" alt="Ютуб"></a>
+        <a class="social-button-youtube" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Ютуб"></a>
       </li>
     </ul>
 
@@ -164,7 +172,7 @@
       <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Html Academy">
       </a>
     </div>
-
+  </div>
   </footer>
 </body>
 
