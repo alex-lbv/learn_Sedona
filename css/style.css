@@ -84,8 +84,9 @@ a {
   width: auto;
   background-color: #ffffff;
   background-image: url("../img/bg-index3.jpg");
-
   background-repeat: no-repeat;
+
+  margin-bottom: 60px;
 }
 .top-img {
   padding-top: 135px;
@@ -103,7 +104,7 @@ a {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  padding-top: 55px;
+
   margin-left: 66px;
 }
 .reasons p {
@@ -363,6 +364,8 @@ a {
   width: auto;
   padding:0;
 
+
+
 }
 .main-footer p {
   font-weight: 700;
@@ -374,14 +377,16 @@ a {
 
   margin: 0 auto;
   padding:0;
-
+  padding-top: 36px;
+  padding-bottom: 36px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 
 }
 .footer-kheshtyeg {
   margin: 0;
-  width: 33%;
+  width: 33.333%;
   text-align: center;
 }
 .footer-social {
@@ -389,12 +394,24 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 33%;
-  text-align: center;
+  width: 33.333%;
+
+
+  display: flex;
+  justify-content: center;
 }
 .logo-footer {
   text-align: center;
-  width: 33%;
+  width: 33.333%;
+
+}
+.logo-footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-htmlacademy {
+  padding-right: 8px;
 }
 .footer-social li {
   display: flex;
