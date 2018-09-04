@@ -2,18 +2,23 @@ body {
   margin: 0;
   padding: 0;
 
-  min-width: 768px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   text-transform: uppercase;
 }
 a {
   text-decoration: none;
+}
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+
 }
 .main-header {
   width: auto;
@@ -25,15 +30,12 @@ a {
   color: #000000;
   background-color: #ffffff;
 
-
-  display: flex;
-  justify-content: center;
-
-  margin-left: 6%;
-  margin-right: 6%;
+  position: relative;
 }
 .main-header-logo {
-
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .site-navigation {
   background-color: #ffffff;
@@ -41,6 +43,9 @@ a {
 
   margin:0;
   padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 .site-navigation li {
   width: 20%;
@@ -57,15 +62,15 @@ a {
 
 .top-sedona {
   width: auto;
-  min-height: 512px;
   background-color: #ffffff;
-  background-image: url("../img/bg-index.jpg");
-  background-position: center;
+  background-image: url("../img/bg-index3.jpg");
+
   background-repeat: no-repeat;
-  background-size: 100%;
 }
 .top-img {
-  text-align: center justify;
+  padding-top: 135px;
+  padding-bottom: 135px;
+   text-align: center;
 }
 .reasons {
   background-color: #ffffff;
