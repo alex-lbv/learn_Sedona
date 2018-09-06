@@ -33,14 +33,16 @@
   <main class="container">
 
     <section class="top-sedona">
-      <!-- <h1 class="visually-hidden">Седона</h1> -->
+      <h1 class="visually-hidden">Седона</h1>
       <div class="top-img">
         <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome Sedona">
       </div>
+      <!-- <div class="polygon">
+      </div> -->
     </section>
 
     <section class="reasons">
-      <h2>Седона- небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+      <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
 
@@ -48,11 +50,10 @@
 
         <div class="description-text-gorodok">
           <h3>Настоящий<br> городок</h3>
-          <p>-№1-</p>
+          <p>— №1 —</p>
           <p>Седона-не аттракцион для туристов,<br> там течет своя жизнь</p>
         </div>
         <div class="description-img-gorodok">
-          <!-- <img src="img/gorodok.jpg" width="512" height="256" alt="Городок"> -->
         </div>
 
     </section>
@@ -61,15 +62,15 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="feature-list">
         <li class="feature-item">
-          <h3>Жильё</h3>
+          <h3 class="housing">Жильё</h3>
           <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино</p>
         </li>
         <li class="feature-item">
-          <h3>Еда</h3>
+          <h3 class="food">Еда</h3>
           <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь</p>
         </li>
         <li class="feature-item">
-          <h3>Сувениры</h3>
+          <h3 class="souvenirs">Сувениры</h3>
           <p>Не только китайского, но и местного<br> производства</p>
         </li>
       </ul>
@@ -79,7 +80,7 @@
 
         <div class="description-text-most">
           <h3>Там есть<br> мост Дьявола</h3>
-          <p>-№2-</p>
+          <p>— №2 —</p>
           <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
         </div>
         <div class="description-img-most">
@@ -133,20 +134,23 @@
             <input class="date-input" type="text" name="date-check-out" id="check-out" value="4 июля 2017">
             <button class="button-date-check-out"></button>
           </p>
-          <p class="form-footer">
-            <label for="adult-id">Взрослые</label>
-            <button class="button-reduce" name="button-adult-reduce" id="button-adult-reduce" value="reduce">-</button>
+          <div class="form-footer">
+          <p class="form-footer-adult">
+            <label for="adult-id">Взрослые:</label>
+
+            <button class="button-reduce adult" name="button-adult-reduce" id="button-adult-reduce" value="reduce">-</button>
             <input class="number-input" type="number" name="adult" id="adult-id" value="2">
             <button class="button-add" name="button-adult-add" id="button-adult-add" value="add">+</button>
-
-            <label for="childs-id">Дети</label>
-            <button class="button-reduce" name="button-childs-reduce" id="button-childs-reduce" value="reduce">-</button>
+          </p>
+          <p class="form-footer-child">
+            <label for="childs-id">Дети:</label>
+            <button class="button-reduce child" name="button-childs-reduce" id="button-childs-reduce" value="reduce">-</button>
             <input class="number-input" type="number" name="childs" id="childs-id" value="0">
             <button class="button-add" name="button-childs-add" id="button-childs-add" value="add">+</button>
           </p>
+        </div>
           <button class="button-search-form" type="submit" value="Найти">Найти</button>
         </form>
-
     </section>
 
     <section class="map">
