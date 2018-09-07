@@ -3,14 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Седона Каталог</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
-  
+  <div class="content-wrapper">
   <header class="main-header">
     <nav class="main-navigation">
       <div class="main-header-logo">
@@ -34,7 +35,7 @@
       <h2 class="visually-hidden">Фильтр</h2>
       <form class="filter-form" method="get">
         <div>
-          <h4>Инфраструткра:</h4>
+          <h4>Инфраструктура:</h4>
           <ul class="filter-list">
 
           <li class="filter-option">
@@ -71,46 +72,51 @@
         </ul>
         </div>
 
-        <div class="range-filter">
-          <p><span>Стоимость в сутки (р):</span></p>
-          <div class="range-control">
-            <div class="scale">
-              <div class="bar">
-              </div>
-            </div>
-            <div class="toggle toggle-min">
-            </div>
-            <div class="toggle toggle-max">
-            </div>
-          </div>
-          <div class="price-control">
-            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-          <label class="max-price">до <input name="max-price" type="text" value="3000"></label>
+        <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
         </div>
-          <button class="filter-button">Показать</button>
-        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
+    </div>
 
       </form>
     </section>
 
-
+    <div class="search-wrapper">
     <div class="search-catalog">
+      <div class="search-found">
         <p><span class="found">Найдено: 3</span></p>
-        <p>Сортировка:</p>
+        <p><b>Сортировка:</b></p>
         <ul class="search-list">
           <li><a class="search-sort-price" href="#">По цене</a></li>
           <li><a class="search-sort-type" href="#">По типу</a></li>
           <li><a class="search-sort-rating" href="#">По рейтингу</a></li>
+        </ul>
+      </div>
+      <div class="search-button">
+        <ul class="search-button-list">
           <li><a class="button search-button search-button-up">Вверх</a></li>
           <li><a class="button search-button search-button-down">Вниз</a></li>
         </ul>
+      </div>
     </div>
+  </div>
 
     <section class="catalog">
       <h2 class="visually-hidden">Результаты поиска</h2>
       <ul class="catalog-list">
 
         <li class="catalog-item">
+          <div class="catalog-item-wrapper">
           <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/amara.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
@@ -120,13 +126,16 @@
             <h3>
               <a class="catalog-item-title" href="catalog-item.html">AMARA RESORT & SPA</a>
             </h3>
-            <span class="catalog-category">ГОСТИНИЦА</span>
+            <div class="catalog-category-and-price">
+            <span class="catalog-category-hotel">ГОСТИНИЦА</span>
             <span class="catalog-price">ОТ 4000 Р.</span>
+            </div>
             <p>
             <a class="button button-more" href="#">ПОДРОБНЕЕ</a>
             <a class="button button-reserve" href="#">ЗАБРОНИРОВАТЬ</a>
             </p>
           </div>
+        </div>
           <div class="catalog-rating">
             <p class="star"><span class="four"></span></p>
             <p><span class="rating">Рейтинг: 8.5</span></p>
@@ -134,6 +143,7 @@
         </li>
 
         <li class="catalog-item">
+          <div class="catalog-item-wrapper">
           <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/desert.jpg" width="135" height="90" alt="DESERT QUAIL INN">
@@ -143,20 +153,25 @@
             <h3>
               <a class="catalog-item-title" href="catalog-item.html">DESERT QUAIL INN</a>
             </h3>
-            <span class="catalog-category">МОТЕЛЬ</span>
+            <div class="catalog-category-and-price">
+            <span class="catalog-category-motel">МОТЕЛЬ</span>
             <span class="catalog-price">ОТ 3000 Р.</span>
+          </div>
             <p>
             <a class="button button-more" href="#">ПОДРОБНЕЕ</a>
             <a class="button button-reserve" href="#">ЗАБРОНИРОВАТЬ</a>
             </p>
           </div>
+          </div>
           <div class="catalog-rating">
             <p class="star"><span class="three"></span></p>
             <p><span class="rating">Рейтинг: 8.9</span></p>
         </div>
+
         </li>
 
         <li class="catalog-item">
+          <div class="catalog-item-wrapper">
           <p class="catalog-item-image">
             <a href="catalog-item.html">
               <img src="img/villas.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
@@ -166,17 +181,21 @@
             <h3>
               <a class="catalog-item-title" href="catalog-item.html">VILLAS AT POCO DIABLO</a>
             </h3>
-            <span class="catalog-category">АПАРТАМЕНТЫ</span>
+            <div class="catalog-category-and-price">
+            <span class="catalog-category-apartaments">АПАРТАМЕНТЫ</span>
             <span class="catalog-price">ОТ 2000 Р.</span>
+          </div>
             <p>
             <a class="button button-more" href="#">ПОДРОБНЕЕ</a>
             <a class="button button-reserve" href="#">ЗАБРОНИРОВАТЬ</a>
             </p>
+            </div>
           </div>
           <div class="catalog-rating">
               <p class="star"><span class="two"></span></p>
               <p><span class="rating">Рейтинг: 9.2</span></p>
           </div>
+
         </li>
       </ul>
     </section>
@@ -200,13 +219,14 @@
     </ul>
 
     <div class="logo-footer">
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="logo-footer-link" href="https://htmlacademy.ru/intensive/htmlcss">
       <span class="logo-htmlacademy">Website by</span>
       <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Html Academy">
       </a>
     </div>
   </div>
   </footer>
+</div>
 </body>
 
 </html>
