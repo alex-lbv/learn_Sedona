@@ -5,7 +5,7 @@ function hideForm(form) {
 }
 function showForm(form, height) {
     form.style.height = height + "px";
-    form.style.padding = null;
+    form.style.removeProperty("padding");
     form.classList.add("is-opened");
 }
 (function() {
